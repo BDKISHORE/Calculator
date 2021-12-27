@@ -31,6 +31,25 @@ buttons.forEach((button) => {
   });
 });
 
+$(document).ready(function () {
+  $("#scientific-cal").hide();
+  $("#basic-cal").addClass("active");
+
+  $("#basic-cal-id").click(function () {
+    $("#basic-cal").show();
+    $("#scientific-cal").hide();
+    $("#basic-cal-id").addClass("active");
+    $("#scientific-cal-id").removeClass("active");
+  });
+
+  $("#scientific-cal-id").click(function () {
+    $("#basic-cal").hide();
+    $("#scientific-cal").show();
+    $("#basic-cal-id").removeClass("active");
+    $("#scientific-cal-id").addClass("active");
+  });
+});
+
 function printDigits(val) {
   let input = document.getElementById("input-view").value;
   if (input == 0) {

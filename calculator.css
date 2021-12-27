@@ -46,3 +46,24 @@
 .backspace {
   background-color: #f2d188;
 }
+
+.options:hover {
+  background-color: #253152;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.options-list li.active {
+  color: white;
+}
+
+.options-list li a {
+  color: rgb(139, 138, 141);
+}
+
+.options-list li.active a {
+  color: inherit;
+}
